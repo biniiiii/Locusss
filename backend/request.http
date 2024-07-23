@@ -1,0 +1,19 @@
+GET http://localhost:3000/
+
+### Retrieve all to-dos
+GET http://localhost:3000/api/v1/todos
+
+### Retrieve a single to-do by ID
+GET http://localhost:3000/api/v1/todos/669dd2a3cc240e9bbc3da811
+
+### Delete a to-do by ID
+DELETE http://localhost:3000/api/v1/todos/669d54ca26a2f3c722bd00a2
+
+### Update a to-do by ID
+PUT http://localhost:3000/api/v1/todos/669d561a59d8357e371f473e
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "description": "Updated description"
+}
